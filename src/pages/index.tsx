@@ -64,10 +64,10 @@ export default function Home({
                   </ul>
                 </td>
                 <td className="px-4 py-3">
-                  {formatDateTime(data.lastReportTime) || 'Not available'}
+                {data.lastReportTime ? formatDateTime(data.lastReportTime) : 'Not available'}
                 </td>
                 <td className="px-4 py-3">
-                  {formatDateTime(data.nextReportTime) || 'Not available'}
+                {data.nextReportTime ? formatDateTime(data.nextReportTime) : 'Not available'}
                 </td>
               </tr>
             ))}
