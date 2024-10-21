@@ -8,8 +8,8 @@ interface Device {
   id: string;
   name: string | null;
   model: Model;
-  lastReportTime: string;
-  nextReportTime: string;
+  lastReportTime: string | null;
+  nextReportTime: string | null;
 }
 
 export interface ApiResponse {
